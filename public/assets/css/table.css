@@ -1,0 +1,117 @@
+.bg-azul {
+    background-color: rgb(198, 223, 245);
+}
+
+.periodic-table {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}
+
+.periodic-table tr td {
+    display: inline-block;
+    /* margin-top: 2px; */
+    vertical-align: top;
+    min-height: 20px;
+    width: 5.5%;
+    height: 50px;
+    border: 2px solid white;
+    text-align: center;
+    /* background-color: rgb(105, 109, 114); */
+}
+
+/* .periodic-table tr td{
+    max-width: 5%;
+    padding: 10px 20px;
+    border: 2px solid white;
+    font-size: 24px;
+} */
+
+.a-number{
+    display: block;
+    text-align: start;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 1px;
+}
+
+.symbol{
+    margin-top: -7px;
+    padding: 0;
+    display: block;
+}
+
+.leyenda{
+    border: 2px solid white;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.alc {
+    background-color: rgb(235, 104, 10);
+}
+
+.alc-t {
+    background-color: rgb(251, 191, 0);
+}
+
+.metal {
+    background-color: rgb(213, 216, 41);
+}
+
+.lan {
+    background-color: rgb(0, 169, 150);
+}
+
+.act {
+    background-color: rgb(80, 161, 77);
+}
+
+.otro-metal {
+    background-color: rgb(254, 237, 1);
+}
+
+.metaloide {
+    background-color: rgb(152, 218, 109);
+}
+
+.no-metal {
+    background-color: rgb(94, 149, 209);
+}
+
+.halogeno {
+    background-color: rgb(212, 90, 161);
+}
+
+.g-noble {
+    background-color: rgb(6, 185, 240);
+}
+
+.n-found{
+    background-color: rgb(172, 172, 172);
+}
+
+.t-offset-16{
+    margin-left: 88%;
+}
+
+.t-offset-10{
+    margin-left: 55%;
+}
+
+.t-offset-3{
+    margin-left: 16.5%;
+}
+
+.t-offset-1{
+    margin-left: 5.5%;
+}

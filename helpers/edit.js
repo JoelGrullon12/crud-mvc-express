@@ -1,0 +1,1 @@
+exports.setSelect = (movie, type) => movie.type == type ? "selected" : "";

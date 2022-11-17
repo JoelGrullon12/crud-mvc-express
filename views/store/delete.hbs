@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-6 offset-3">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title mb-3 text-danger">Eliminar pelicula</h3>
+                <form action="/delete" method="post">
+                    <div class="mb-3">
+                        <label for="txtName" class="form-label">Nombre de la Pelicula</label>
+                        <input type="text" class="form-control" name="name" id="txtName" value="{{movie.name}}" readonly>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" style="height:150px;" name="desc" readonly>{{movie.desc}}</textarea>
+                        <label>Descripcion</label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="slcGenero">Genero</label>
+                        <select name="type" id="slcGenero" class="form-select mb-3" disabled>
+                            <option value="1" {{setSelect movie 1}}>Accion</option>
+                            <option value="2" {{setSelect movie 2}}>Terror</option>
+                            <option value="3" {{setSelect movie 3}}>Comedia</option>
+                            <option value="4" {{setSelect movie 4}}>Suspenso</option>
+                            <option value="5" {{setSelect movie 5}}>Documentales</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="slcActiva">Estado</label>
+                        <select name="active" id="slcActiva" class="form-select mb-3" disabled>
+                            <option value="true" {{#if movie.active}}selected{{/if}}>Activa</option>
+                            <option value="false" {{#unless movie.active}}selected{{/unless}}>Inactiva</option>
+                        </select>
+                    </div>
+
+                    <p>¿Estas seguro que quieres eliminar esta pelicula?</p>
+
+                    <div class="d-flex flex-row-reverse">
+                        <input class="btn btn-outline-danger ms-2" type="submit" value="Eliminar">
+                        <a href="/" class="btn btn-outline-secondary">Cancelar</a>
+                    </div>
+
+                    <input type="hidden" name="id" value="{{movie.id}}">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
